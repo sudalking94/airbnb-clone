@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import render
-from . import models
 from django_countries import countries
+from . import models
 
 
 class HomeView(ListView):
@@ -36,8 +36,10 @@ def search(request):
     bedrooms = int(request.GET.get("bedrooms", 0))
     beds = int(request.GET.get("beds", 0))
     baths = int(request.GET.get("baths", 0))
-    s_amenities = request.GET.get("amenities", 0)
-    s_facilitiese = request.GET.get("facilities", 0)
+    Instant = request.GET.get("Instant", False)
+    super_host = request.GET.get("super_host", False)
+    s_amenities = request.GET.getlist("amenities", 0)
+    s_facilities = request.GET.getlist("facilities", 0)
 
     form = {
         "city": city,
@@ -48,6 +50,10 @@ def search(request):
         "bedrooms": bedrooms,
         "beds": beds,
         "baths": baths,
+        "s_amenities": s_amenities,
+        "s_facilities": s_facilities,
+        "instant": Instant,
+        "super_host": super_host,
     }
     room_types = models.RoomType.objects.all()
     amenities = models.Amenity.objects.all()
@@ -60,8 +66,18 @@ def search(request):
         "facilities": facilities,
     }
 
+    filter_args = {}
+
+    if city != "Anywhere":
+        filter_args["city__startswith"] = city
+
+    filter_args["country"] = country
+    if room_type != 0:
+        filter_args["room_type__pk"] = room_type
+    rooms = models.Room.objects.filter(**filter_args)
+
     return render(
         request,
         "rooms/search.html",
-        {**form, **choices},
+        {**form, **choices, "rooms": rooms},
     )
