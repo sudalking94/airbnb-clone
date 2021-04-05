@@ -146,3 +146,8 @@ EMAIL_PORT = "587"
 EMAIL_HOST_USER = os.environ.get("MAILGUN_USERNAME")
 EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_PASSWORD")
 EMAIL_FROM = "sexy-guy@sandbox308662f3840f40a5a28edb500365024e.mailgun.org"
+
+
+# Auth
+
+LOGIN_URL = "/users/login/"
