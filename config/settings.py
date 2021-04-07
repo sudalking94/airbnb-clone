@@ -151,3 +151,7 @@ EMAIL_FROM = "sexy-guy@sandbox308662f3840f40a5a28edb500365024e.mailgun.org"
 # Auth
 
 LOGIN_URL = "/users/login/"
+
+# Locale
+
+LOCALE_PATHS = (BASE_DIR / "locale",)
