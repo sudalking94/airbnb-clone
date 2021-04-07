@@ -1,6 +1,6 @@
 {% extends 'base.html' %} 
 {% load is_booked %}
-
+{% load i18n %}
 {% block page_title %}{{room.name}}{% endblock page_title %}
 
 {% block content %}
@@ -16,6 +16,7 @@
 
 <div class="container mx-auto flex justify-around pb-56">
     <div class="w-1/2">
+        <a href="{% url 'lists:save-room' room.pk %}" class="btn-link block mb-10 w-1/3">{% trans 'Save to favorite' %}</a>
         <div class="flex justify-between">
             <div class="mb-5">
                 <h4 class="text-3xl font-medium mb-px">{{room.name}}</h4>
@@ -37,28 +38,28 @@
             {{room.description}}            
         </p>
         <div class="border-section">
-            <h4 class="font-medium text-lg mb-5">Amenities</h4>
+            <h4 class="font-medium text-lg mb-5">{% trans 'Amenities' %}</h4>
             
             {% for a in room.amenities.all %}
                 <li class="mb-2">{{a}}</li>
             {% endfor %}                
         </div>
         <div class="border-section">
-            <h4 class="font-medium text-lg mb-5">Facilities</h4>
+            <h4 class="font-medium text-lg mb-5">{% trans 'Facilities' %}</h4>
             
             {% for a in room.facilities.all %}
                 <li class="mb-2">{{a}}</li>
             {% endfor %}                
         </div>
         <div class="border-section">
-            <h4 class="font-medium text-lg mb-5">House Rules</h4>
+            <h4 class="font-medium text-lg mb-5">{% trans 'House Rules' %}</h4>
             
             {% for a in room.house_rules.all %}
                 <li class="mb-2">{{a}}</li>
             {% endfor %}                
         </div>
         <div>
-            <h4 class="font-medium text-2xl mb-5">Reviews</h4>
+            <h4 class="font-medium text-2xl mb-5">{% trans 'Reviews' %}</h4>
             <div class="flex items-center">
                 <div>
                     <i class="fas fa-star text-green-500"></i>
@@ -67,7 +68,7 @@
                 <div class="h-4 w-px bg-gray-400 mx-5"></div>
                 <div>
                     <span class="font-bold text-xl">{{room.reviews.count}}</span>
-                    <span>review{{room.reviews.count|pluralize}}</span>
+                    <span>{% trans 'review' %}{{room.reviews.count|pluralize}}</span>
                 </div>                
             </div>
             <div class="mt-10">                
@@ -90,13 +91,12 @@
     </div>
     <div class="w-1/3">                
         {% if room.host == user %}
-        <a href="{% url 'rooms:edit' room.pk %}" class="btn-link block">Edit Room</a>
-        <a href="#" class="btn-link bg-red-700 block mt-5">Delete Room</a>
-        {% else %}            
-            {% if not request.session.is_hosting %}
-                
+        <a href="{% url 'rooms:edit' room.pk %}" class="btn-link block">{% trans 'Edit Room' %}</a>
+        <a href="#" class="btn-link bg-red-700 block mt-5">{% trans 'Delete Room' %}</a>
+        {% else %}                    
+            {% if not request.session.is_hosting %}                
                 {% for calendar in room.get_calendars %}
-                <div class="mb-20">
+                <div class="mb-20">                    
                     <span class="text-center font-semibold text-lg block mb-8">{{calendar.get_month}}/{{calendar.year}}</span>
                     <div class="cal-grid font-semibold mb-4">
                     {% for day in calendar.day_names %}

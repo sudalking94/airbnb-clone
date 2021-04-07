@@ -1,3 +1,4 @@
+from django.utils.translation import gettext_lazy as _
 from django.contrib import admin
 from django.utils.html import mark_safe
 from . import models
@@ -111,4 +112,4 @@ class PhotoAdmin(admin.ModelAdmin):
         print(dir(obj.file))
         return mark_safe(f'<img src="{obj.file.url}" />')
 
-    get_thumbnail.short_description = "Thumbnail"
+    get_thumbnail.short_description = _("Thumbnail")

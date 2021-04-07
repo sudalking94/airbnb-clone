@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 17:24+0900\n"
+"POT-Creation-Date: 2021-04-07 22:25+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,216 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: rooms/admin.py:115
+msgid "Thumbnail"
+msgstr "매우간단한 그림"
+
+#: rooms/models.py:14
+msgid "name"
+msgstr "이름"
+
+#: rooms/models.py:28
+msgid "Room Type"
+msgstr "방 유형"
+
+#: rooms/models.py:36 templates/rooms/room_detail.html:40
+msgid "Amenities"
+msgstr "편의 기능"
+
+#: rooms/models.py:46 templates/rooms/room_detail.html:47
+msgid "Facilities"
+msgstr "시설"
+
+#: rooms/models.py:54
+msgid "House Rule"
+msgstr "집 규칙"
+
+#: rooms/models.py:61
+msgid "caption"
+msgstr "표제"
+
+#: rooms/models.py:62
+msgid "file"
+msgstr "파일"
+
 #: templates/base.html:23
 msgid "Search by City"
-msgstr ""
+msgstr "도시별로 검색하시오"
 
-#: templates/partials/footer.html:4
+#: templates/emails/verify_email.html:3
+msgid "here"
+msgstr "여기"
+
+#: templates/mixins/room_card.html:8
+msgid "superhost"
+msgstr "최고 관리자"
+
+#: templates/partials/footer.html:5
 msgid "Please don't copy us."
-msgstr ""
+msgstr "복사하지 마세요"
 
-#: templates/partials/footer.html:6
+#: templates/partials/footer.html:7
 msgid "All rights reserved"
-msgstr ""
+msgstr "무단 전재와 무단 복제를 금함"
+
+#: templates/partials/footer.html:16 users/models.py:30
+msgid "English"
+msgstr "영어"
+
+#: templates/partials/footer.html:21 users/models.py:31
+msgid "Korean"
+msgstr "조선어"
+
+#: templates/partials/nav.html:9
+msgid "Stop hosting"
+msgstr "호스팅 중지"
+
+#: templates/partials/nav.html:11
+msgid "start hosting"
+msgstr "호스팅 시작"
+
+#: templates/partials/nav.html:18
+msgid "Create Room"
+msgstr "방 만들기"
+
+#: templates/partials/nav.html:21
+msgid "Profile"
+msgstr "계정 정보"
+
+#: templates/partials/nav.html:22
+msgid "Log out"
+msgstr "로그 아웃"
+
+#: templates/partials/nav.html:24
+msgid "Log in"
+msgstr "로그 인"
+
+#: templates/partials/nav.html:25
+msgid "Sign up"
+msgstr "회원 가입"
+
+#: templates/partials/social_login.html:4
+msgid "Continue with Github"
+msgstr "깃헙 로그인"
+
+#: templates/partials/social_login.html:7
+msgid "Continue with Kakao"
+msgstr "카카오 로그인"
+
+#: templates/partials/social_login.html:13
+msgid "or"
+msgstr "또는"
+
+#: templates/reservations/detail.html:31
+msgid "Contact your Airbnb Host"
+msgstr "당신의 에어비엔비 주인과 연락하라"
+
+#: templates/reservations/detail.html:32
+msgid "Send a Message"
+msgstr "메시지 보내기"
+
+#: templates/reservations/detail.html:40
+msgid "Write your review"
+msgstr "리뷰 작성하기"
+
+#: templates/reservations/detail.html:44
+msgid "Submit review"
+msgstr "리뷰 제출하기"
+
+#: templates/reservations/detail.html:48
+msgid "Cancel Reservation"
+msgstr "예약 취소"
+
+#: templates/reservations/detail.html:50
+msgid "Confirm Reservation"
+msgstr "예약 확인"
+
+#: templates/rooms/room_detail.html:54
+msgid "House Rules"
+msgstr "집 규칙"
+
+#: templates/rooms/room_detail.html:61
+msgid "Reviews"
+msgstr "후기"
+
+#: templates/rooms/room_detail.html:70
+msgid "review"
+msgstr "후기"
+
+#: templates/rooms/room_detail.html:93
+msgid "Edit Room"
+msgstr "방 편집"
+
+#: templates/rooms/room_detail.html:94
+msgid "Delete Room"
+msgstr "방 삭제"
+
+#: templates/rooms/room_edit.html:17
+msgid "Edit Photos"
+msgstr "사진 편집"
+
+#: templates/rooms/room_list.html:28
+#, python-format
+msgid "Page %(current_page)s of %(total_pages)s"
+msgstr "전체 %(total_pages)s 페이지 중 %(current_page)s 페이지"
+
+#: templates/rooms/room_photos.html:14
+msgid "Upload photo"
+msgstr "사진 올리기"
+
+#: templates/rooms/room_photos.html:23
+msgid "Edit"
+msgstr "편집"
+
+#: templates/rooms/room_photos.html:24
+msgid "Delete"
+msgstr "삭제"
+
+#: templates/rooms/room_photos.html:29
+msgid "Back to edit room"
+msgstr "방 편집으로 돌아가기"
+
+#: templates/rooms/search.html:12 templates/rooms/search.html:16
+msgid "Search"
+msgstr "검색"
+
+#: templates/rooms/search.html:19
+msgid "Results"
+msgstr "규칙"
+
+#: users/mixins.py:24
+msgid "Can't go there"
+msgstr "그곳에 갈수 없다"
+
+#: users/models.py:21
+msgid "Male"
+msgstr "남"
+
+#: users/models.py:22
+msgid "Female"
+msgstr "여"
+
+#: users/models.py:23
+msgid "Other"
+msgstr "제3의 성별"
+
+#: users/models.py:51
+msgid "gender"
+msgstr "성별"
+
+#: users/models.py:53
+msgid "bio"
+msgstr "자기소개"
+
+#: users/models.py:56
+msgid "language"
+msgstr "언어"
+
+#: users/models.py:83
+msgid "Verify Airbnb Account"
+msgstr "에어비엔비 계정을 수정하라"
+
+#, fuzzy
+#~| msgid "Room Type"
+#~ msgid "Room"
+#~ msgstr "방 유형"
