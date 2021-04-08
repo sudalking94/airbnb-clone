@@ -30,8 +30,6 @@ class LoginView(mixins.LoggedOutOnlyView, FormView):
 
     def get_success_url(self):
         next_arg = self.request.GET.get("next")
-        print("--------")
-        print(next_arg)
         if next_arg is not None:
             return next_arg
         else:
