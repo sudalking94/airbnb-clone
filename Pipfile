@@ -17,7 +17,7 @@ black = "*"
 awsebcli = "*"
 
 [requires]
-python_version = "3.8.5"
+python_version = "3.9.2"
 
 [pipenv]
 allow_prereleases = true
