@@ -10,7 +10,6 @@ django-countries = "*"
 django-dotenv = "*"
 requests = "*"
 django-seed = "*"
-psycopg2 = "*"
 
 [dev-packages]
 flake8 = "*"
