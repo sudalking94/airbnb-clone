@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "_!g2^hpkmtmuc*%hu$vq=s8hws3s6p%#d!de(5p571ug_!5rhr"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [".elasticbeanstalk.com"]
 
@@ -87,7 +87,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if DEBUG:
+if DEBUG is True:
 
     DATABASES = {
         "default": {
