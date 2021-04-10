@@ -11,10 +11,10 @@ django-dotenv = "*"
 requests = "*"
 django-seed = "*"
 psycopg2 = "*"
+pipenv-to-requirements = "*"
 
 [dev-packages]
 flake8 = "*"
-black = "*"
 awsebcli = "*"
 
 [requires]
