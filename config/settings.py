@@ -20,14 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = "_!g2^hpkmtmuc*%hu$vq=s8hws3s6p%#d!de(5p571ug_!5rhr"
-SECRET_KEY = os.environ.get("DJANGO_SECRET")
+SECRET_KEY = "_!g2^hpkmtmuc*%hu$vq=s8hws3s6p%#d!de(5p571ug_!5rhr"
+# SECRET_KEY = os.environ.get("DJANGO_SECRET")
 # "_!g2^hpkmtmuc*%hu$vq=s8hws3s6p%#d!de(5p571ug_!5rhr"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".elasticbeanstalk.com"]
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = [".elasticbeanstalk.com"]
+ALLOWED_HOSTS = []
 
 # Application definition
 DJANGO_APPS = [
@@ -88,7 +88,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if DEBUG is False:
+if DEBUG is True:
 
     DATABASES = {
         "default": {

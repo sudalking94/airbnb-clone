@@ -55,7 +55,10 @@ class SignUpView(mixins.LoggedOutOnlyView, FormView):
         user = authenticate(self.request, username=email, password=password)
         if user is not None:
             login(self.request, user)
-        user.verify_email()
+            """
+            이메일 인증을 하게 되면 mailgun 유료회원이 아니기 때문에 허가받은 이메일만 사용될 수 있음
+            """
+        # user.verify_email()
         return super().form_valid(form)
 
 
