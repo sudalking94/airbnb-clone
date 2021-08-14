@@ -108,8 +108,7 @@ class PhotoAdmin(admin.ModelAdmin):
 
     list_display = ("__str__", "get_thumbnail")
 
-    def get_thumbnail(self, obj):
-        print(dir(obj.file))
+    def get_thumbnail(self, obj):        
         return mark_safe(f'<img src="{obj.file.url}" />')
 
     get_thumbnail.short_description = _("Thumbnail")
