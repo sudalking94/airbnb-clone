@@ -33,6 +33,18 @@ class SearchView(View):
     """ SearchView Definition """
 
     def get(self, request):
+        keys_list = list(request.GET)
+        if (len(keys_list) == 1 and keys_list[0] == "city"):
+            city = request.GET.get("city")
+            page = request.GET.get("page",1)
+            filter_args = {}
+            filter_args["city__startswith"] = city
+            room_list = models.Room.objects.filter(**filter_args).order_by("-created")
+            paginator = Paginator(room_list,10,orphans=5)
+            rooms = paginator.page(int(page))
+            return render(
+                    request, "rooms/room_list.html", {"rooms": rooms}
+                )
 
         country = request.GET.get("country")
 
