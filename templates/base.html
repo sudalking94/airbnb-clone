@@ -25,6 +25,9 @@
           type"text"          
         />
       </form>
+      <form action="{% url 'rooms:search' %}">
+        <input type="submit" value="세부검색" class="rounded-md h-2.5 text-xs text-center" />
+      </form>
       {% endblock search-bar %}  
     </div>
     {% include "partials/nav.html" %}
