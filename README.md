@@ -23,7 +23,6 @@
 
 ```
 git clone https://github.com/sudalking94/airbnb-clone
-pipenv --three python 3.9
 pipenv sync
 pipenv shell
 python manage.py runserver
