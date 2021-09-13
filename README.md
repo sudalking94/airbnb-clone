@@ -56,16 +56,16 @@ $ python manage.py runserver
 ![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-room-detail.jpg?token=AQBRQOHQN3GURVVAEL24HQTBH4COI)
 
 ## 로그인
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-login.jpg?token=AQBRQOD2GVI4JK6ZFPVLYLDBH4CTQ)
+![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-login.jpg?token=AQBRQOHREBBWAKAEXXTKVLDBH4DMO)
 
 ## 관심있는 방 목록
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-fav.jpg?token=AQBRQOHF5SG5BPBLVKM6BSTBH4CVW)
+![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-fav.jpg?token=AQBRQOC6XEFPODIG6VLJEDTBH4DNW)
 
 ## 방 검색
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-search.jpg?token=AQBRQOAZA77TCKYZVJTAIEDBH4CZY)
+![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-search.jpg?token=AQBRQOF7SXZ65EMC55FP5JTBH4DO4)
 
 ## 리뷰
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-review.jpg?token=AQBRQOGRLHQEVENF37PHZRTBH4C3C)
+![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-review.jpg?token=AQBRQOBYSRIRZ3XJUUPMKETBH4DJ6)
 
 ## 프로파일 업데이트
 ![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-profile-update.jpg?token=AQBRQOELDHT5QFI4MZAP5Z3BH4C5Y)
