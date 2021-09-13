@@ -53,22 +53,22 @@ $ python manage.py runserver
 ![airbnb-main](https://user-images.githubusercontent.com/67311672/133045199-abfb5469-23d9-46ae-89f7-c8ceec785025.jpg)
 
 ## 상세 페이지
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-room-detail.jpg?token=AQBRQOAAYNJQMMYKZGF2YALBH4DQW)
+![airbnb-room-detail](https://user-images.githubusercontent.com/67311672/133054917-1e037d7a-8dbd-485c-a149-c15837bc4c52.jpg)
 
 ## 로그인
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-login.jpg?token=AQBRQOHREBBWAKAEXXTKVLDBH4DMO)
+![airbnb-login](https://user-images.githubusercontent.com/67311672/133054954-ef9a6a67-aa30-48cf-bc42-f178ccb3137b.jpg)
 
 ## 관심있는 방 목록
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-fav.jpg?token=AQBRQOC6XEFPODIG6VLJEDTBH4DNW)
+![airbnb-fav](https://user-images.githubusercontent.com/67311672/133055004-23c55107-7a2e-47ca-b2ea-14fe71bf363d.jpg)
 
 ## 방 검색
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-search.jpg?token=AQBRQOF7SXZ65EMC55FP5JTBH4DO4)
+![airbnb-search](https://user-images.githubusercontent.com/67311672/133055020-738c9d3a-82ab-42bb-bd5f-87369ea19be8.jpg)
 
 ## 리뷰
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-review.jpg?token=AQBRQOBYSRIRZ3XJUUPMKETBH4DJ6)
+![airbnb-review](https://user-images.githubusercontent.com/67311672/133055057-59b01906-ebed-4551-bd71-85af17b91d37.jpg)
 
 ## 프로파일 업데이트
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-profile-update.jpg?token=AQBRQOELDHT5QFI4MZAP5Z3BH4C5Y)
+![airbnb-profile-update](https://user-images.githubusercontent.com/67311672/133055078-55474cbc-2e60-456e-88be-ee77370dc8b4.jpg)
 
 ## 방 생성
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-create-room.jpg?token=AQBRQOGGL5UXBSEQ3YI4N3TBH4C6W)
+![airbnb-create-room](https://user-images.githubusercontent.com/67311672/133055111-f284b692-44ac-4385-98c4-d00de68be27a.jpg)
