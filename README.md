@@ -53,7 +53,7 @@ $ python manage.py runserver
 ![airbnb-main](https://user-images.githubusercontent.com/67311672/133045199-abfb5469-23d9-46ae-89f7-c8ceec785025.jpg)
 
 ## 상세 페이지
-![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-room-detail.jpg?token=AQBRQOHQN3GURVVAEL24HQTBH4COI)
+![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-room-detail.jpg?token=AQBRQOAAYNJQMMYKZGF2YALBH4DQW)
 
 ## 로그인
 ![image](https://raw.githubusercontent.com/sudalking94/my-website-demo/master/frontend/src/static/images/airbnb/airbnb-login.jpg?token=AQBRQOHREBBWAKAEXXTKVLDBH4DMO)
